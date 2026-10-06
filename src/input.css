@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* =========================================
+   Global Styles
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #00183c;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================================
+   Custom Utilities
+========================================= */
+
+@layer utilities {
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 24, 60, 0.92) 0%,
+      rgba(0, 24, 60, 0.72) 28%,
+      rgba(0, 24, 60, 0.25) 65%,
+      rgba(0, 24, 60, 0.05) 100%
+    );
+  }
+
+  .hero-bottom-fade {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 24, 60, 0.15) 35%,
+      #00183c 100%
+    );
+  }
+
+  .glass-nav {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* =========================================
+   Components
+========================================= */
+
+@layer components {
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-md
+      bg-[#39a1fd] px-6 py-3 text-sm font-semibold text-white
+      transition duration-200 hover:bg-[#2795f5];
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-md
+      border border-white px-6 py-3 text-sm font-semibold text-white
+      transition duration-200 hover:bg-white/10;
+  }
+
+  .section-container {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-6 lg:px-10;
+  }
+
+  .service-card {
+    @apply rounded-xl bg-[#0d2548] p-6;
+  }
+}

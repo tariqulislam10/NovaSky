@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="NovaSky - Connect higher with next-generation mobile connectivity."
+    />
+
+    <title>NovaSky — Connect Higher</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind compiled CSS -->
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+    <header
+      class="fixed left-0 right-0 top-0 z-50 border-b border-white/[0.04] bg-[#00183c]/95 glass-nav"
+    >
+      <nav
+        class="section-container flex h-[72px] items-center justify-between"
+        aria-label="Main navigation"
+      >
+        <!-- Logo -->
+
+        <a href="#home" class="shrink-0">
+          <img
+            src="./assets/logo.png"
+            alt="NovaSky"
+            class="w-[115px] sm:w-[130px]"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+
+        <div class="hidden items-center gap-8 md:flex">
+          <a
+            href="#home"
+            class="text-[13px] font-medium text-[#39a1fd] transition hover:text-white"
+          >
+            Home
+          </a>
+
+          <a
+            href="#plans"
+            class="text-[13px] font-medium text-white transition hover:text-[#39a1fd]"
+          >
+            Plans
+          </a>
+
+          <a
+            href="#business"
+            class="text-[13px] font-medium text-white transition hover:text-[#39a1fd]"
+          >
+            Business
+          </a>
+
+          <a
+            href="#coverage"
+            class="text-[13px] font-medium text-white transition hover:text-[#39a1fd]"
+          >
+            Coverage
+          </a>
+
+          <a
+            href="#support"
+            class="text-[13px] font-medium text-white transition hover:text-[#39a1fd]"
+          >
+            Help
+          </a>
+        </div>
+
+        <!-- Account Button -->
+
+        <a
+          href="#"
+          class="hidden items-center gap-2 rounded-md bg-[#39a1fd] px-5 py-2.5 text-[12px] font-semibold text-white transition hover:bg-[#2795f5] sm:flex"
+        >
+          My Account
+
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <circle cx="12" cy="8" r="4" />
+
+            <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" />
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Button -->
+
+        <button
+          id="menuButton"
+          type="button"
+          class="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 md:hidden"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg
+            id="menuOpenIcon"
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M4 6h16" />
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+
+      <div
+        id="mobileMenu"
+        class="hidden border-t border-white/10 bg-[#00183c] md:hidden"
+      >
+        <div class="section-container flex flex-col gap-5 py-6">
+          <a href="#home" class="text-sm font-medium text-[#39a1fd]"> Home </a>
+
+          <a href="#plans" class="text-sm font-medium"> Plans </a>
+
+          <a href="#business" class="text-sm font-medium"> Business </a>
+
+          <a href="#coverage" class="text-sm font-medium"> Coverage </a>
+
+          <a href="#support" class="text-sm font-medium"> Help </a>
+
+          <a href="#" class="primary-button w-fit"> My Account </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+    <main>
+      <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+      <section
+        id="home"
+        class="relative min-h-[650px] overflow-hidden pt-[72px] lg:min-h-[700px]"
+      >
+        <!-- Hero image -->
+
+        <img
+          src="./assets/hero.png"
+          alt=""
+          aria-hidden="true"
+          class="absolute inset-0 h-full w-full object-cover object-[68%_center]"
+        />
+
+        <!-- Dark overlay -->
+
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <!-- Bottom fade -->
+
+        <div class="hero-bottom-fade absolute inset-x-0 bottom-0 h-1/2"></div>
+
+        <!-- Hero Content -->
+
+        <div
+          class="section-container relative z-10 flex min-h-[578px] items-center"
+        >
+          <div class="max-w-[650px]">
+            <h1
+              class="text-[44px] font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl xl:text-[76px]"
+            >
+              Connect
+
+              <span class="text-[#3fd0fc]"> higher. </span>
+            </h1>
+
+            <p
+              class="mt-6 max-w-[470px] text-sm leading-7 text-white sm:text-base lg:text-lg"
+            >
+              The next-generation mobile network designed for you, in
+              Switzerland and beyond.
+            </p>
+
+            <!-- CTA -->
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#plans" class="primary-button"> Explore Our Plans </a>
+
+              <a href="#esim" class="secondary-button"> Activate an eSIM </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+         PLANS
+    ==================================================== -->
+
+      <section id="plans" class="bg-[#00183c]">
+        <div class="section-container py-14 sm:py-20">
+          <div class="grid gap-6 lg:grid-cols-3 lg:gap-8">
+            <!-- ================= ONE ================= -->
+
+            <article class="flex flex-col rounded-xl bg-[#0d2548] p-6 sm:p-8">
+              <h2 class="text-2xl font-bold sm:text-3xl">
+                NovaSky
+
+                <span class="text-[#3fd0fc]"> One </span>
+              </h2>
+
+              <p class="mt-2 text-sm">Everything you need for everyday use</p>
+
+              <!-- Price -->
+
+              <div class="mt-6 flex items-end gap-1">
+                <span class="pb-1 text-sm"> CHF </span>
+
+                <span class="text-5xl font-bold leading-none"> 24.90 </span>
+
+                <span class="pb-1 text-sm"> /month </span>
+              </div>
+
+              <!-- Features -->
+
+              <ul class="mt-8 flex flex-1 flex-col gap-4">
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">▥</span>
+                  <span>25 GB in 5G Switzerland</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">♧</span>
+                  <span>Unlimited Calls within Switzerland</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">□</span>
+                  <span>Unlimited SMS within Switzerland</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">⌁</span>
+                  <span>Hotspot included</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">◎</span>
+                  <span>No commitment</span>
+                </li>
+              </ul>
+
+              <a href="#" class="primary-button mt-8 w-full"> Choose One </a>
+
+              <a href="#" class="mt-4 text-center text-sm hover:text-[#3fd0fc]">
+                More details →
+              </a>
+            </article>
+
+            <!-- ================= PLUS ================= -->
+
+            <article
+              class="relative flex flex-col rounded-xl border border-[#39a1fd] bg-[#0d2548] p-6 sm:p-8"
+            >
+              <!-- Popular -->
+
+              <span
+                class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#39a1fd] px-4 py-1 text-[10px] font-bold"
+              >
+                POPULAR
+              </span>
+
+              <h2 class="text-2xl font-bold sm:text-3xl">
+                NovaSky
+
+                <span class="text-[#3fd0fc]"> Plus </span>
+              </h2>
+
+              <p class="mt-2 text-sm">
+                The perfect balance for your everyday life
+              </p>
+
+              <div class="mt-6 flex items-end gap-1">
+                <span class="pb-1 text-sm"> CHF </span>
+
+                <span class="text-5xl font-bold leading-none"> 39.90 </span>
+
+                <span class="pb-1 text-sm"> /month </span>
+              </div>
+
+              <ul class="mt-8 flex flex-1 flex-col gap-4">
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">▥</span>
+                  <span>80 GB in 5G Switzerland & EU</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">♧</span>
+                  <span>Unlimited Calls within Switzerland</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">□</span>
+                  <span>Unlimited SMS within Switzerland & EU</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">⌁</span>
+                  <span>Hotspot included</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">◉</span>
+                  <span>Roaming in EU included</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">⊖</span>
+                  <span>No commitment</span>
+                </li>
+              </ul>
+
+              <a href="#" class="primary-button mt-8 w-full"> Choose Plus </a>
+
+              <a href="#" class="mt-4 text-center text-sm hover:text-[#3fd0fc]">
+                More details →
+              </a>
+            </article>
+
+            <!-- ================= MAX ================= -->
+
+            <article class="flex flex-col rounded-xl bg-[#0d2548] p-6 sm:p-8">
+              <h2 class="text-2xl font-bold sm:text-3xl">
+                NovaSky
+
+                <span class="text-[#3fd0fc]"> Max </span>
+              </h2>
+
+              <p class="mt-2 text-sm">For those who want the maximum</p>
+
+              <div class="mt-6 flex items-end gap-1">
+                <span class="pb-1 text-sm"> CHF </span>
+
+                <span class="text-5xl font-bold leading-none"> 59.90 </span>
+
+                <span class="pb-1 text-sm"> /month </span>
+              </div>
+
+              <ul class="mt-8 flex flex-1 flex-col gap-4">
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">▥</span>
+                  <span>150 GB in 5G Switzerland</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">♧</span>
+                  <span>Unlimited Calls within Switzerland</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">□</span>
+                  <span>Unlimited SMS within Switzerland & EU</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">⌁</span>
+                  <span>Roaming worldwide included</span>
+                </li>
+
+                <li class="flex gap-3 text-sm">
+                  <span class="text-[#3fd0fc]">◉</span>
+                  <span>Priority Network</span>
+                </li>
+              </ul>
+
+              <a href="#" class="primary-button mt-8 w-full"> Choose Max </a>
+
+              <a href="#" class="mt-4 text-center text-sm hover:text-[#3fd0fc]">
+                More details →
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+         FEATURES
+    ==================================================== -->
+
+      <section class="bg-[#00183c]">
+        <div class="section-container py-14 sm:py-20">
+          <!-- Top Features -->
+
+          <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Feature -->
+
+            <article>
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-lg bg-[#0d2548]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 20h2" />
+                  <path d="M7 16h2" />
+                  <path d="M11 12h2" />
+                  <path d="M15 8h2" />
+                  <path d="M19 4h2" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 font-semibold">Ultra-Fast 5G Network</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                Enjoy a fast and reliable connection wherever you are.
+              </p>
+            </article>
+
+            <!-- Feature -->
+
+            <article>
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-lg bg-[#0d2548]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="8" r="3" />
+                  <path d="M5 21c0-4 3-7 7-7s7 3 7 7" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 font-semibold">Nationwide Coverage</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                Reliable, high-performance coverage across Switzerland.
+              </p>
+            </article>
+
+            <!-- Feature -->
+
+            <article>
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-lg bg-[#0d2548]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 font-semibold">Unlimited Calls & SMS</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                Stay connected with your family and friends without limits.
+              </p>
+            </article>
+
+            <!-- Feature -->
+
+            <article>
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-lg bg-[#0d2548]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="9" />
+
+                  <path d="M8 12h8" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 font-semibold">No Contract</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                No long-term commitment. Cancel whenever you want.
+              </p>
+            </article>
+          </div>
+
+          <!-- Service Cards -->
+
+          <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
+            <!-- eSIM -->
+
+            <article
+              id="esim"
+              class="service-card transition duration-300 hover:-translate-y-1"
+            >
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-full bg-[#00183c]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="6" y="2" width="12" height="20" rx="2" />
+
+                  <rect x="9" y="6" width="6" height="6" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 text-lg font-semibold">eSIM</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                Activate your plan instantly, no physical SIM needed.
+              </p>
+
+              <a href="#" class="primary-button mt-5 px-5 py-2.5">
+                Activate eSIM
+                <span class="ml-2">→</span>
+              </a>
+            </article>
+
+            <!-- Coverage -->
+
+            <article
+              id="coverage"
+              class="service-card transition duration-300 hover:-translate-y-1"
+            >
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-full bg-[#00183c]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M4 20V10" />
+                  <path d="M9 20V6" />
+                  <path d="M14 20V3" />
+                  <path d="M19 20V8" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 text-lg font-semibold">Coverage</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                See where NovaSky keeps you connected across Switzerland.
+              </p>
+
+              <a href="#" class="primary-button mt-5 px-5 py-2.5">
+                Check Coverage
+                <span class="ml-2">→</span>
+              </a>
+            </article>
+
+            <!-- Business -->
+
+            <article
+              id="business"
+              class="service-card transition duration-300 hover:-translate-y-1"
+            >
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-full bg-[#00183c]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="7" width="18" height="13" rx="2" />
+
+                  <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 text-lg font-semibold">Business</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                Flexible mobile solutions built for teams and companies.
+              </p>
+
+              <a href="#" class="primary-button mt-5 px-5 py-2.5">
+                Learn More
+                <span class="ml-2">→</span>
+              </a>
+            </article>
+
+            <!-- Support -->
+
+            <article
+              id="support"
+              class="service-card transition duration-300 hover:-translate-y-1"
+            >
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-full bg-[#00183c]"
+              >
+                <svg
+                  class="h-6 w-6 text-[#3fd0fc]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M4 13a8 8 0 0 1 16 0" />
+
+                  <path d="M4 13v4a2 2 0 0 0 2 2h1v-6H4Z" />
+
+                  <path d="M20 13v4a2 2 0 0 1-2 2h-1v-6h3Z" />
+                </svg>
+              </div>
+
+              <h3 class="mt-4 text-lg font-semibold">Support</h3>
+
+              <p class="mt-2 text-sm leading-6">
+                Our team is here to help you every day of the week.
+              </p>
+
+              <a href="#" class="primary-button mt-5 px-5 py-2.5">
+                Get Support
+                <span class="ml-2">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+    <footer class="border-t border-white/[0.04] bg-[#00183c]">
+      <div class="section-container py-16">
+        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-10">
+          <!-- Brand -->
+
+          <div class="lg:col-span-2">
+            <img src="./assets/logo.png" alt="NovaSky" class="w-[125px]" />
+
+            <p class="mt-6 max-w-[330px] text-sm leading-6">
+              NovaSky is a modern and innovative mobile network that keeps you
+              connected to what matters most, throughout Switzerland and beyond.
+            </p>
+
+            <!-- Social -->
+
+            <div class="mt-6 flex gap-5">
+              <a href="#" class="font-bold hover:text-[#3fd0fc]"> f </a>
+
+              <a href="#" class="font-bold hover:text-[#3fd0fc]"> ◎ </a>
+
+              <a href="#" class="font-bold hover:text-[#3fd0fc]"> in </a>
+
+              <a href="#" class="font-bold hover:text-[#3fd0fc]"> ♪ </a>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+
+          <div>
+            <h3 class="mb-6 text-sm font-semibold">Navigation</h3>
+
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a href="#home" class="hover:text-[#3fd0fc]"> Home </a>
+              </li>
+
+              <li>
+                <a href="#plans" class="hover:text-[#3fd0fc]"> Plans </a>
+              </li>
+
+              <li>
+                <a href="#esim" class="hover:text-[#3fd0fc]"> eSIM </a>
+              </li>
+
+              <li>
+                <a href="#coverage" class="hover:text-[#3fd0fc]"> Coverage </a>
+              </li>
+
+              <li>
+                <a href="#business" class="hover:text-[#3fd0fc]"> Business </a>
+              </li>
+
+              <li>
+                <a href="#support" class="hover:text-[#3fd0fc]">
+                  Help & Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Information -->
+
+          <div>
+            <h3 class="mb-6 text-sm font-semibold">Information</h3>
+
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]"> About Us </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]"> Careers </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]"> Press </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]"> Partners </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]">
+                  Terms & Conditions
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]"> Privacy Policy </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-[#3fd0fc]"> Legal Notice </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div>
+            <h3 class="mb-6 text-sm font-semibold">Contact</h3>
+
+            <ul class="space-y-4 text-sm">
+              <li>0800 800 100</li>
+
+              <li>support@novasky.ch</li>
+
+              <li>Mon – Sun: 8:00 AM – 8:00 PM</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div
+          class="mt-14 flex flex-col gap-4 border-t border-white/[0.07] pt-7 text-xs sm:flex-row sm:items-center sm:justify-between"
+        >
+          <p>© 2026 NovaSky. All Rights Reserved.</p>
+
+          <button type="button" class="hover:text-[#3fd0fc]">English</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
