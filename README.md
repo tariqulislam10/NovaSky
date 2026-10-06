@@ -8,7 +8,7 @@ The main goal of this project was to practice **pixel-focused UI recreation, res
 
 ## 🌐 Live Preview
 
-🔗 **Live Demo:** Add your deployed website URL here
+🔗 https://novasky-web.vercel.app/
 
 ---
 
@@ -67,11 +67,11 @@ NovaSky-Landing-Page/
 │   │   ├── logo.png
 │   │   ├── hero.png
 │   │
-│   ├── index.html
 │   ├── input.css
 │   |── output.css
 |   |__ script.js
 |
+├── index.html
 |__.gitignore
 ├── package.json
 ├── package-lock.json
